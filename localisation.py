@@ -4,11 +4,8 @@ from geopy.exc import GeocoderTimedOut
 import time
 import os
 
-# Créer le dossier Data si nécessaire
-os.makedirs("../Data", exist_ok=True)
-
 # Charger le fichier nettoyé Excel
-df = pd.read_excel("../Data/fichier_nettoye.xlsx")
+df = pd.read_excel("fichier_nettoye.xlsx")
 
 # Nettoyer les colonnes adresse / code_postal / ville
 df = df.dropna(subset=["adresse"])

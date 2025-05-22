@@ -8,7 +8,7 @@ import numpy as np
 import math
 
 # Charger le fichier Excel
-fichier = "Data/fichier_geocode.xlsx"
+fichier = "fichier_geocode.xlsx"
 df = pd.read_excel(fichier)
 
 # Nettoyage et transformation
@@ -20,7 +20,7 @@ st.set_page_config(page_title="Coworking Finder", layout="wide")
 
 # Logo et titre
 with st.sidebar:
-    st.image("Data/logo.png", width=120)
+    st.image("logo.png", width=120)
     st.markdown("# Coworking Finder")
     menu = st.radio("Navigation", ["Carte & statistiques", "Indicateurs", "Calculer un itinéraire"], index=0)
     arrondissements = sorted(df["code_postal"].dropna().unique().tolist())

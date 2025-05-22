@@ -34,8 +34,8 @@ def nettoyage_excel(fichier):
         print("Colonne 'telephone' non trouvée dans le fichier.")
 
     # Sauvegarde du résultat
-    df.to_excel("../Data/fichier_nettoye.xlsx", index=False)
+    df.to_excel("fichier_nettoye.xlsx", index=False)
     print("Fichier nettoyé et sauvegardé dans 'fichier_nettoye.xlsx'")
 
 # Appel de la fonction
-nettoyage_excel("../Data/informations_coworking_idf.xlsx")
+nettoyage_excel("informations_coworking_idf.xlsx")

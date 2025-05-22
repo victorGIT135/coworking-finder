@@ -83,5 +83,5 @@ for url, content in responses:
 
 # Export Excel
 df = pd.DataFrame(infos_extraites)
-df.to_excel("../Data/informations_coworking_idf.xlsx", index=False)
+df.to_excel("informations_coworking_idf.xlsx", index=False)
 print("Données exportées vers informations_coworking_idf.xlsx")
