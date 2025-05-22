@@ -1,0 +1,24 @@
+# === ENVIRONNEMENT VIRTUEL ===
+projet_venv/
+.venv/
+venv/
+env/
+ENV/
+.env/
+.ENV/
+
+# === CACHE PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === FICHIERS SYSTÈME ===
+.DS_Store
+Thumbs.db
+
+# === AUTRES TEMPORAIRES ===
+*.log
+*.sqlite3
+*.db
+*.bak
+*.swp

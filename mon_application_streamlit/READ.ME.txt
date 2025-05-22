@@ -1,0 +1,40 @@
+Application Streamlit – Visualisation des Espaces de Coworking en Île-de-France
+
+Cette application interactive permet de visualiser, filtrer et explorer les espaces de coworking situés en Île-de-France à partir de données extraites du site [leportagesalarial.com](https://www.leportagesalarial.com/coworking/).
+
+Fonctionnalités principales : 
+
+- Carte interactive avec Folium : localisation des espaces de coworking avec clustering.
+- Recherche par nom** : sélection d'un espace pour afficher ses informations complètes.
+- Filtre par arrondissement (code postal)** : zoom automatique et filtrage des résultats.
+- Marqueur rouge** : l’espace sélectionné est mis en évidence sur la carte.
+- Heatmap : zones les plus et moins concentrées en coworking.
+- Histogramme : répartition des coworkings par code postal.
+
+Structure du projet : 
+
+mon_application_streamlit/
+│
+├── Data/
+│ ├── informations_coworking_idf.xlsx # Données extraites du site
+│ ├── fichier_nettoye.xlsx # Données nettoyées
+│ └── fichier_geocode.xlsx # Données avec géocodage
+│
+├── Scripts/
+│ ├── extraction.py # Extraction des données
+│ ├── data_cleaning.py # Nettoyage des données
+│ └── geocodage.py # Ajout latitude/longitude
+│
+├── app.py # Application Streamlit principale
+└── README.md # Ce fichier
+
+Etapes à suivre pour le bon fonctionnement de l'application
+
+1. Installer les dépendances avec pip install -r requirements.txt
+2. Exécuter le script TD_Python.py
+3. Exécuter le script data_cleaning.py
+4. Exécuter le script localisation.py
+5. Lancer l'application streamlit avec streamlit run app.py
+
+-------------------------------------------------------------
+Les commandes indiquées dans ce READ.ME fonctionnent sous Windows.
